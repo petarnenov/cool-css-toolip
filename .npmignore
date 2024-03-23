@@ -8,3 +8,4 @@ package-lock.json
 storybook.log
 package*
 .vscode
+.eslintrc.js
