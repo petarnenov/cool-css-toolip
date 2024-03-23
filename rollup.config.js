@@ -33,12 +33,12 @@ export default [
             external(),
             resolve(),
             sass({
-                output: 'dist/index.css',
+                insert: true
             }),
             image(),
             commonjs(),
             json(),
-            terser(),
+            //terser(),
         ],
     },
 ];
