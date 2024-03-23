@@ -20,6 +20,8 @@ function Tooltip({
   textAlign,
   lineHeight,
   hoverOpacity,
+  overflow,
+  whiteSpace,
 }) {
   return (
     <span
@@ -39,6 +41,8 @@ function Tooltip({
         '--tooltip-text-align': textAlign,
         '--tooltip-line-height': lineHeight,
         '--tooltip-hover-opacity': hoverOpacity,
+        '--tooltip-overflow': overflow,
+        '--tooltip-white-space': whiteSpace,
       }}
     >
       <img src={icon} alt="tooltip icon" width="16" />
@@ -62,6 +66,8 @@ Tooltip.defaultProps = {
   textAlign: 'left',
   lineHeight: '1rem',
   hoverOpacity: '1',
+  overflow: 'hidden',
+  whiteSpace: 'nowrap',
 };
 
 Tooltip.propTypes = {
@@ -80,6 +86,8 @@ Tooltip.propTypes = {
   textAlign: PropTypes.string,
   lineHeight: PropTypes.string,
   hoverOpacity: PropTypes.string,
+  overflow: PropTypes.string,
+  whiteSpace: PropTypes.string,
 };
 
 export default Tooltip;
