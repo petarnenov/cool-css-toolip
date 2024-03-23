@@ -8,7 +8,13 @@
     "clear": "rm -rf dist",
     "build-prod": "rollup -c",
     "build": "npm run clear && npm run build-prod",
-    "patch": "npm version patch && git push --follow-tags"
+    "patch": "npm version patch && git push --follow-tags",
+    "minor": "npm version minor && git push --follow-tags",
+    "major": "npm version major && git push --follow-tags",
+    "prepublishOnly": "npm run build",
+    "push-patch": "npm run patch && npm run build",
+    "push-minor": "npm run minor && npm run build",
+    "push-major": "npm run major && npm run build"
   },
   "keywords": [],
   "author": "petar.nenov <petarnenovpetrov@gmail.com>",
