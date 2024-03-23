@@ -1,6 +1,6 @@
 {
   "name": "cool-css-tooltip",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "build": "npm run clear && rollup -c",
     "patch": "npm version patch && git push --follow-tags",
     "minor": "npm version minor && git push --follow-tags",
-    "major": "npm version major && git push --follow-tags",    
+    "major": "npm version major && git push --follow-tags",
     "push-patch": "npm run patch",
     "push-minor": "npm run minor",
     "push-major": "npm run major",
