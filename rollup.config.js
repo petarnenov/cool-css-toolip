@@ -14,12 +14,12 @@ export default [
         input: 'src/index.js',
         output: [
             {
-                file: `dist/index-v${pkg.version}.js`,
+                file: `dist/index.js`,
                 format: 'cjs',
                 sourcemap: true,
             },
             {
-                file: `dist/index-v${pkg.version}.es.js`,
+                file: `dist/index.es.js`,
                 format: 'es',
                 exports: 'named',
                 sourcemap: true,

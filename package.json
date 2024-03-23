@@ -1,7 +1,8 @@
 {
   "name": "css-tooltip",
   "version": "0.0.5",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -12,9 +13,10 @@
     "minor": "npm version minor && git push --follow-tags",
     "major": "npm version major && git push --follow-tags",
     "prepublishOnly": "npm run build",
-    "push-patch": "npm run patch && npm run build",
+    "push-patch": "npm run patch && npm run build npm run publish",
     "push-minor": "npm run minor && npm run build",
-    "push-major": "npm run major && npm run build"
+    "push-major": "npm run major && npm run build",
+    "publish" : "npm publish --access public"
   },
   "keywords": [],
   "author": "petar.nenov <petarnenovpetrov@gmail.com>",
