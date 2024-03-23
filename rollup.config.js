@@ -17,12 +17,13 @@ export default [
       {
         file: 'dist/index.js',
         format: 'cjs',
+        exports: 'auto',
         sourcemap: true,
       },
       {
         file: 'dist/index.es.js',
         format: 'es',
-        exports: 'named',
+        exports: 'auto',
         sourcemap: true,
       },
     ],
@@ -32,7 +33,9 @@ export default [
         presets: ['@babel/preset-react'],
       }),
       external(),
-      resolve(),
+      resolve({
+        extensions: ['.js', '.jsx'],
+      }),
       image(),
       commonjs(),
       json(),
