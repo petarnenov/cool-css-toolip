@@ -32,16 +32,13 @@ export default [
                 presets: ['@babel/preset-react'],
             }),
             external(),
-            resolve(),            
+            resolve(),
             image(),
             commonjs(),
             json(),
             postcss({
                 modules: true,
-                extract: 'styles.css',
-                minimize: true,
-                inject: false,
-                sourceMap: true,
+                inject: true,
                 extensions: ['.scss', '.css'],
                 use: ['sass'],
             })

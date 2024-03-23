@@ -2,3 +2,7 @@
 node_modules
 src
 stories
+rollup.config.js
+package.json
+package-lock.json
+storybook.log
