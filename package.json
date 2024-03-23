@@ -66,5 +66,9 @@
   "description": "",
   "dependencies": {
     "prop-types": "^15.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petarnenov/cool-css-toolip"
   }
 }
