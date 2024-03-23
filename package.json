@@ -1,6 +1,6 @@
 {
   "name": "cool-css-tooltip",
-  "version": "0.0.12",
+  "version": "0.0.11",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "prepublishOnly": "npm run build",
     "push-patch": "npm run patch",
     "push-minor": "npm run minor",
-    "push-major": "npm run major"
+    "push-major": "npm run major",
+    "publish": "npm publish --access public"
   },
   "keywords": [],
   "author": "petar.nenov <petarnenovpetrov@gmail.com>",
