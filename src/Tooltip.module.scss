@@ -2,8 +2,9 @@
   position: relative;
   margin-left: var(--tooltip-margin-left, 0.5rem);
   cursor: var(--tooltip-cursor, help);
-  
+
   &:after {
+    display: block;
     position: absolute;
     left: 50%;
     opacity: var(--tooltip-opacity, 0);
@@ -15,9 +16,9 @@
     font-size: var(--tooltip-font-size, 1rem);
     padding: var(--tooltip-padding-top-bottom, 0.25rem) var(--tooltip-padding-left-right, 0.5rem);
     border-radius: var(--tooltip-border-radius, 0.25rem);
-    top: var(--tooltip-top, -1.5rem);
+    top: var(--tooltip-top, -1.75rem);
     width: var(--tooltip-width, 8rem);
-    height: var(--tooltip-height, -1.5rem);
+    height: var(--tooltip-height, 1rem);
     white-space: var(--tooltip-white-space, nowrap);
     overflow: var(--tooltip-overflow, hidden);
     text-overflow: var(--tooltip-text-overflow, ellipsis);
