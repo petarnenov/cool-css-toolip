@@ -1,6 +1,6 @@
 {
   "name": "css-tooltip",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "src/index.js",
   "scripts": {
     "storybook": "storybook dev -p 6006",
