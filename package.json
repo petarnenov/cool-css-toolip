@@ -14,7 +14,7 @@
     "push-patch": "npm run patch",
     "push-minor": "npm run minor",
     "push-major": "npm run major",
-    "publish": "npm publish --access public",
+    "publish-prod": "npm publish --access public",
     "emitDefinitions": "npx -p typescript tsc src/*.js --declaration --allowJs --emitDeclarationOnly --outDir dist"
   },
   "keywords": [],
