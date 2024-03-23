@@ -15,7 +15,7 @@
     "push-minor": "npm run minor",
     "push-major": "npm run major",
     "publish-prod": "npm publish --access public",
-    "emitDefinitions": "npx -p typescript tsc src/*.js --declaration --allowJs --emitDeclarationOnly --outDir dist/types"
+    "emitDefinitions": "npx -p typescript tsc src/*.js --declaration --allowJs --emitDeclarationOnly --outDir dist"
   },
   "keywords": [],
   "author": "petar.nenov <petarnenovpetrov@gmail.com>",
