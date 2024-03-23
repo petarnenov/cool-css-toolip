@@ -1,12 +1,12 @@
 {
   "name": "cool-css-tooltip",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "clear": "rm -rf dist",    
+    "clear": "rm -rf dist",
     "build": "npm run clear && rollup -c",
     "patch": "npm version patch && git push --follow-tags",
     "minor": "npm version minor && git push --follow-tags",
