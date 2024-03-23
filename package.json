@@ -7,15 +7,14 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "clear": "rm -rf dist",
-    "build": "npm run clear && rollup -c && npm run emitDefinitions",
+    "build": "npm run clear && rollup -c",
     "patch": "npm version patch && git push --follow-tags",
     "minor": "npm version minor && git push --follow-tags",
     "major": "npm version major && git push --follow-tags",
     "push-patch": "npm run patch",
     "push-minor": "npm run minor",
     "push-major": "npm run major",
-    "publish-prod": "npm publish --access public",
-    "emitDefinitions": "npx -p typescript tsc src/*.js --declaration --allowJs --emitDeclarationOnly --outDir dist"
+    "publish-prod": "npm publish --access public"
   },
   "keywords": [],
   "author": "petar.nenov <petarnenovpetrov@gmail.com>",
