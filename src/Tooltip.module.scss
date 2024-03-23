@@ -20,7 +20,7 @@
     height: var(--tooltip-height, -1.5rem);
     white-space: var(--tooltip-white-space, nowrap);
     overflow: var(--tooltip-overflow, hidden);
-    text-overflow: var(tooltip-text-overflow, ellipsis);
+    text-overflow: var(--tooltip-text-overflow, ellipsis);
     transform: translateX(var(--tooltip-translate-x, 0));
     background-color: var(--tooltip-background-color, #e9e9f1);
     text-align: var(--tooltip-text-align, left);
