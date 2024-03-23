@@ -14,7 +14,12 @@ const Tooltip = ({
   fontSize,
   color,
   icon = Info,
-  top
+  top,
+  translateX,
+  backgroundColor,
+  textAlign,
+  lineHeight,
+  hoverOpacity
 }) => {
   return (
     <span
@@ -28,7 +33,12 @@ const Tooltip = ({
         "--tooltip-cursor": cursor,
         "--tooltip-font-size": fontSize,
         "--tooltip-color": color,
-        "--tooltip-top": top
+        "--tooltip-top": top,
+        "--tooltip-translate-x": translateX,
+        "--tooltip-background-color": backgroundColor,
+        "--tooltip-text-align": textAlign,
+        "--tooltip-line-height": lineHeight,
+        "--tooltip-hover-opacity": hoverOpacity
       }}
     >
       <img src={icon} alt="tooltip icon" width="16" />
@@ -47,6 +57,11 @@ Tooltip.propTypes = {
   color: PropTypes.string,
   icon: PropTypes.string,
   top: PropTypes.string,
+  translateX: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  textAlign: PropTypes.string,
+  lineHeight: PropTypes.string,
+  hoverOpacity: PropTypes.string
 };
 
 export default Tooltip;
