@@ -22,6 +22,7 @@ function Tooltip({
   hoverOpacity,
   overflow,
   whiteSpace,
+  zIndex,
 }) {
   return (
     <span
@@ -43,6 +44,7 @@ function Tooltip({
         '--tooltip-hover-opacity': hoverOpacity,
         '--tooltip-overflow': overflow,
         '--tooltip-white-space': whiteSpace,
+        '--tooltip-z-index': zIndex,
       }}
     >
       <img src={icon} alt="tooltip icon" width="16" />
@@ -68,6 +70,7 @@ Tooltip.defaultProps = {
   hoverOpacity: '1',
   overflow: 'hidden',
   whiteSpace: 'nowrap',
+  zIndex: '9999',
 };
 
 Tooltip.propTypes = {
@@ -88,6 +91,7 @@ Tooltip.propTypes = {
   hoverOpacity: PropTypes.string,
   overflow: PropTypes.string,
   whiteSpace: PropTypes.string,
+  zIndex: PropTypes.string,
 };
 
 export default Tooltip;
