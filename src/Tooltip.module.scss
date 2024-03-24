@@ -4,10 +4,8 @@
   cursor: var(--tooltip-cursor, help);
 
   &:after {
-    position: relative;
-    z-index: var(--tooltip-z-index, 9999);
-    display: block;
     position: absolute;
+    display: block;
     left: 50%;
     opacity: var(--tooltip-opacity, 0);
     transition: all ease 0.3s;
@@ -33,5 +31,6 @@
 
   &:hover::after {
     opacity: var(--tooltip-hover-opacity, 1);
+    z-index: var(--tooltip-z-index, 99999);
   }
 }
