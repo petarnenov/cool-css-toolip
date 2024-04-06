@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
 import Info from './assets/info.svg';
 
@@ -24,7 +25,19 @@ function Tooltip({
   whiteSpace,
   zIndex,
 }) {
-  return (
+  const trRef = useRef(null);
+
+  useEffect(() => {
+    let tooltipRoot = document.getElementById('tooltip-root');
+    if (!tooltipRoot) {
+      tooltipRoot = document.createElement('div');
+      tooltipRoot.setAttribute('id', 'tooltip-root');
+      document.body.appendChild(tooltipRoot);
+    }
+    trRef.current = tooltipRoot;
+  }, []);
+
+  const t = useMemo(() => (
     <span
       className={styles.tooltip}
       data-tooltip={tooltip}
@@ -49,6 +62,12 @@ function Tooltip({
     >
       <img src={icon} alt="tooltip icon" width="16" />
     </span>
+  ), []);
+
+  return (
+    <>
+      {createPortal(t, trRef.current)}
+    </>
   );
 }
 
